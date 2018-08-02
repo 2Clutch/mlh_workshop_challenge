@@ -20,5 +20,3 @@ tweets = browser.find_elements_by_class_name('tweet-text')
 
 for tweet in tweets:
     print(tweet.text)
-
-
