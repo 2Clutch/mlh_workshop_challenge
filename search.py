@@ -1,9 +1,6 @@
 import time
-from flask import Flask
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
-app = Flask(__name__)
 
 browser = webdriver.Chrome()
 base_url = u'https://twitter.com/search?f='
@@ -21,13 +18,7 @@ for _ in range(10):
 
 tweets = browser.find_elements_by_class_name('tweet-text')
 
+for tweet in tweets:
+    print(tweet.text)
 
-@app.route("/")
-def index():
-    for tweet in tweets:
-        print(tweet.text)
-
-
-if __name__ == "__main__":
-    app.run()
 
