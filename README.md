@@ -8,15 +8,11 @@ This is a project I completed as a take-home interview challenge. The objective 
 # Setup
 
 First thing you will want to do is clone the repository by running: 
-
-<br>
-
 ```commandline
 git clone https://github.com/2Clutch/mlh_workshop_challenge
 ```
 
 Next, you will want to install `Selenium` Selenium is open-source web-based automation tool. It is the single driving force behind our application. To install it, run:
-
 ```commandline
 pip install selenium
 ```
