@@ -1,5 +1,8 @@
 # Introduction
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/542fe3498615477f9a9ad66c412b0555)](https://app.codacy.com/app/2Clutch/mlh_workshop_challenge?utm_source=github.com&utm_medium=referral&utm_content=2Clutch/mlh_workshop_challenge&utm_campaign=badger)
+[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/2Clutch/knowledge-purse)
+
 This is a project I completed as a take-home interview challenge. The objective was 
 built a web scraper for twitter to retrieve tweets pertaining to a certain topic. For my 
 assignment, I had to go with `mlh localhost`.
@@ -17,7 +20,10 @@ It is the single driving force behind our application. To install it, run:
 pip install selenium
 ```
 
-Finally, you will to run the project. To do so, while still on the command line, run:
+
+
+Finally, you will want to, hopefully, run the application. To do so, while still on the command line, 
+run:
 ```commandline
 python3 search.py
 ```
