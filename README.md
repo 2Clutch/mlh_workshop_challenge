@@ -3,7 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/542fe3498615477f9a9ad66c412b0555)](https://app.codacy.com/app/2Clutch/mlh_workshop_challenge?utm_source=github.com&utm_medium=referral&utm_content=2Clutch/mlh_workshop_challenge&utm_campaign=badger)
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/2Clutch/knowledge-purse)
 
-This is a project I completed as a take-home interview challenge. The objective was built a web scraper for twitter to retrieve tweets pertaining to a certain topic. For my assignment, I had to go with `mlh localhost`.
+This is a project I completed as a take-home interview challenge. The objective was to build a web scraper for twitter which would retrieve tweets pertaining to a certain topic. For my assignment, I had to go with `mlh localhost`.
 
 # Setup
 
