@@ -12,7 +12,7 @@ First thing you will want to do is clone the repository by running:
 git clone https://github.com/2Clutch/mlh_workshop_challenge
 ```
 
-Next, you will want to install `Selenium` Selenium is open-source web-based automation tool. It is the single driving force behind our application. To install it, run:
+Next, you will want to install `Selenium` Selenium is open-source web-based automation tool. It is the single driving force behind our application. To install it, navigate to your project's directory and run:
 ```commandline
 pip install selenium
 ```
