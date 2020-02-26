@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 
 browser = webdriver.Chrome()
 base_url = u'https://twitter.com/search?f='
-query = u'tweets&vertical=default&q=mlh%20hackathon'
+query = u'tweets&vertical=default&q=pascivite'
 url = base_url + query
 
 browser.get(url)
