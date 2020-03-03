@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 browser = webdriver.Chrome()
-base_url = u'https://twitter.com/search?f='
-query = u'tweets&vertical=default&q=pascivite'
+base_url = u'https://twitter.com/search?q='
+query = u'pascivite&f=live'
 url = base_url + query
 
 browser.get(url)
@@ -16,7 +16,7 @@ for _ in range(10):
     body.send_keys(Keys.PAGE_DOWN)
     time.sleep(2)
 
-tweets = browser.find_elements_by_class_name('tweet-text')
+tweets = browser.find_elements_by_css_selector('[data-testid="tweet"]')
 
 for tweet in tweets:
     print(tweet.text)
