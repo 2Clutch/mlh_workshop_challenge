@@ -11,6 +11,16 @@ class TwitterScraper:
         self.tweets = None
 
     def scrape_latest_tweets(self):
+        """
+        Retrieve latest tweets from a given user
+
+        Args:
+            user (string): twitter username
+            count (int): number of tweets to retrieve
+
+        :return:
+            list of tweets and additional relevant information
+        """
         # Creation of query object
         self.tweet_criteria = got.manager.TweetCriteria().setUsername(self.user).setMaxTweets(self.count)
 
