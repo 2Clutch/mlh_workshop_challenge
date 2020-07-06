@@ -1,22 +1,28 @@
 import GetOldTweets3 as got
 from pprint import pprint as pp
 
-user = 'pascivite'
-count = 10
 
-# Creation of query object
-tweetCriteria = got.manager.TweetCriteria().setUsername(user).setMaxTweets(count)
+class TwitterScraper:
 
-# Creation of list that contains all tweets
-tweets = got.manager.TweetManager.getTweets(tweetCriteria)
+    def __init__(self):
+        self.user = 'pascivite'
+        self.count = 10
+        self.tweet_criteria = None
+        self.tweets = None
 
-# option 1
-# for tweet in tweets:
-#     pp(tweet.__dict__)
-#     print()
-#     print('---------')
-#     print()
+    def scrape_latest_tweets(self):
+        # Creation of query object
+        self.tweet_criteria = got.manager.TweetCriteria().setUsername(self.user).setMaxTweets(self.count)
 
-# option 2
-for i in range(1):
-    pp(tweets[0].__dict__)
+        # Creation of list that contains all tweets
+        self.tweets = got.manager.TweetManager.getTweets(self.tweet_criteria)
+
+        return self.tweets
+
+
+if __name__ == '__main__':
+    test = TwitterScraper()
+    tweets = test.scrape_latest_tweets()
+
+    for i in range(1):
+        pp(tweets[0].__dict__)
