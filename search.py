@@ -1,22 +1,22 @@
-import time
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+import GetOldTweets3 as got
+from pprint import pprint as pp
 
-browser = webdriver.Chrome()
-base_url = u'https://twitter.com/search?q='
-query = u'pascivite&f=live'
-url = base_url + query
+user = 'maximillianaza'
+count = 10
 
-browser.get(url)
-time.sleep(1)
+# Creation of query object
+tweetCriteria = got.manager.TweetCriteria().setUsername(user).setMaxTweets(count)
 
-body = browser.find_element_by_tag_name('body')
+# Creation of list that contains all tweets
+tweets = got.manager.TweetManager.getTweets(tweetCriteria)
 
-for _ in range(10):
-    body.send_keys(Keys.PAGE_DOWN)
-    time.sleep(2)
+# option 1
+# for tweet in tweets:
+#     pp(tweet.__dict__)
+#     print()
+#     print('---------')
+#     print()
 
-tweets = browser.find_elements_by_css_selector('[data-testid="tweet"]')
-
-for tweet in tweets:
-    print(tweet.text)
+# option 2
+for i in range(1):
+    pp(tweets[0].__dict__)
