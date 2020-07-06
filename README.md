@@ -4,7 +4,7 @@
 
 This is a project is the source code to a presentation I gave at a [meetup](https://www.meetup.com/SV-Python-Workshops/) about [TDD](https://en.wikipedia.org/wiki/Test-driven_development).
 
-The objective was to build a web scraper for twitter which would retrieve tweets pertaining to a certain topic. For my use case, I decided to go with `pascivite`.
+The objective was to build a web scraper for twitter which would retrieve tweets from a specific user. For my use case, I decided to go with `pascivite`.
 
 # Setup
 

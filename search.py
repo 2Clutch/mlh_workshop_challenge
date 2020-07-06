@@ -1,7 +1,7 @@
 import GetOldTweets3 as got
 from pprint import pprint as pp
 
-user = 'maximillianaza'
+user = 'pascivite'
 count = 10
 
 # Creation of query object
